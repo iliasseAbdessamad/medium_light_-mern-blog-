@@ -1,4 +1,5 @@
-import {Link} from "react-router"
+
+import { Link } from "react-router"
 import InputBox from "../../components/inputBox/InputBox";
 import google_logo from "../../assets/google.png"
 import './authForm.css'
