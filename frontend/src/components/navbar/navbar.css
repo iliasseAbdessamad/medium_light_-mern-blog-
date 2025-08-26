@@ -1,0 +1,152 @@
+.navbar{
+    border: 1px solid var(--color-gray);
+    padding: 10px 15px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    position:relative;
+}
+
+.navbar_logo{
+    width: 35px;
+    height:auto;
+}
+
+.navbar_right{
+    display:flex;
+    align-items:center;
+}
+
+.navbar_right-search{
+    width: 35px;
+    height: 35px;
+    border:1px solid var(--color-gray);
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    cursor:pointer;
+    color: darkgray;
+    background-color:var(--color-gray-light);
+    transition: color 0.2s;
+}
+
+.navbar_right-search:hover,
+.navbar_btn-write:hover
+{
+    background-color:#FFF;
+}
+
+.navbar_btn-write{
+    padding: 5px 12px;
+    font-size: 16px;
+    background-color:var(--color-gray-light);
+    transition: color 0.2s;
+    border:1px solid var(--color-gray);
+    border-radius: 5px;
+    color:darkgray!important;
+    cursor:pointer;
+    margin-right: 50px;
+}
+
+.navbar_btn-write:visited{
+    color: darkgray!important;
+}
+
+.navbar_btn-signin:visited{
+    color: #FFF!important;
+}
+
+.navbar_btn-signup:visited{
+    color: #000;
+}
+
+.navbar_btn-signin, 
+.navbar_btn-signup{
+    cursor: pointer;
+    padding: 8px 13px;
+}
+
+.navbar_btn-signin, 
+.navbar_right-search{
+    margin-right: 7px;
+}
+
+.navbar_btn-signin{
+    background-color: #000;
+    color:#FFF;
+    border-radius: 40px;
+}
+
+.navbar_btn-signup{
+    background-color: var(--color-gray-light);
+    color:#000;
+    border-radius: 50px;
+}
+
+
+.navbar_left{
+    display: flex;
+    align-items: center;
+}
+
+.navbar_logo{
+    margin-right: 20px
+}
+
+.navbar_search{
+    display: flex;
+    width: 100%;
+    align-items:center;
+    padding: 7px 13px;
+    border: 1px solid var(--color-gray-light);
+    background-color: var(--color-gray-light);
+    border-radius: 40px;
+}
+.navbar_search-input{
+    padding-right: 8px;
+    font-size: 15px;
+}
+
+.navbar_search .navbar_search-icon{
+    color: darkgray;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.navbar_search .navbar_search-icon:hover{
+    color:#000;
+}
+
+.navbar_search-input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.navbar_search{
+    width: 100%;
+}
+
+@media (max-width: 800px){ 
+    .navbar_btn-write,
+    .navbar_btn-signup{
+        display: none;
+    }
+
+    .navbar_search-wrapper{
+        position:absolute;
+        top: 100%;
+        left:0;
+        width:100%;
+        border-bottom: 1px solid var(--color-gray);
+        padding: 12px 80px;
+    }
+}
+
+@media (min-width: 801px){ 
+    .navbar_right-search{
+        display: none;
+    }
+}
