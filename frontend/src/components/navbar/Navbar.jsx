@@ -3,7 +3,7 @@ import logo from "../../assets/logo.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
-import { Link } from "react-router"
+import { Link, Outlet } from "react-router"
 import './navbar.css'
 
 library.add(fas)
@@ -26,6 +26,7 @@ function Navbar() {
     }, [])
 
     return (
+        <>
         <nav className="navbar">
             <div className="navbar_left">
                 <Link to="/">
@@ -51,6 +52,7 @@ function Navbar() {
                 </div>
                 <Link to="/write" className="navbar_btn-write">
                     <FontAwesomeIcon icon="fa-solid fa-edit" />
+                    <span style={{marginLeft:"6px"}}>Write</span>
                 </Link>
                 <Link to="/signin" className="navbar_btn-signin">
                     Sign In
@@ -60,6 +62,8 @@ function Navbar() {
                 </Link>
             </div>
         </nav>
+        <Outlet />
+    </>
     )
 }
 

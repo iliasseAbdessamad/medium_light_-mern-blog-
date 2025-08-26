@@ -1,10 +1,11 @@
 .navbar{
-    border: 1px solid var(--color-gray);
+    border-bottom: .4px solid var(--color-gray);
     padding: 10px 15px;
     display:flex;
     justify-content:space-between;
     align-items: center;
     position:relative;
+    z-index: 999;
 }
 
 .navbar_logo{
@@ -40,7 +41,7 @@
 .navbar_btn-write{
     padding: 5px 12px;
     font-size: 16px;
-    background-color:var(--color-gray-light);
+    /* background-color:var(--color-gray-light); */
     transition: color 0.2s;
     border:1px solid var(--color-gray);
     border-radius: 5px;
@@ -129,6 +130,10 @@
     width: 100%;
 }
 
+.navbar_search-wrapper{
+    background: #FFF;
+}
+
 @media (max-width: 800px){ 
     .navbar_btn-write,
     .navbar_btn-signup{
@@ -140,7 +145,7 @@
         top: 100%;
         left:0;
         width:100%;
-        border-bottom: 1px solid var(--color-gray);
+        border-bottom: .4px solid var(--color-gray);
         padding: 12px 80px;
     }
 }
