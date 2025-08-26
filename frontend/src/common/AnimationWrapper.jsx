@@ -2,8 +2,7 @@
 import { motion } from "framer-motion"
 
 
-
-function AnimationWrapper({uniqueKey, initial, animate, transition, children}) {
+function AnimationWrapper({uniqueKey, children, initial={opacity:0}, animate={opacity:1}, transition={duration:0.6}}) {
   
     return (
         <motion.div 
